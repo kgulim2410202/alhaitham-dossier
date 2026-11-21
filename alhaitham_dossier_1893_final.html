@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Аль-Хайтам · Досье 1893</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#172d2d;--deep:#102322;--teal:#246b68;--jade:#438c83;--pale:#d9e7df;--paper:#f0eee4;--paper2:#e5e2d5;--gold:#aa9564;--muted:#667873;--line:rgba(35,77,72,.24)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#142725;color:var(--ink);font-family:"Libre Baskerville",Georgia,serif;font-size:14px;line-height:1.85}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background-image:radial-gradient(rgba(222,231,218,.35) .6px,transparent .6px);background-size:5px 5px}
+a{color:inherit}.page{width:min(1180px,calc(100% - 34px));margin:38px auto;background:var(--paper);box-shadow:0 24px 80px #071211aa;position:relative;overflow:hidden}
+.page:before,.page:after{content:"";position:absolute;inset:14px;border:1px solid var(--gold);pointer-events:none;z-index:5;opacity:.65}
+.page:after{inset:20px;border-color:var(--line)}
+.masthead{padding:42px 7% 24px;text-align:center;background:linear-gradient(135deg,#e7e7da,#d6e2d9 65%,#d0ddd5);border-bottom:1px solid var(--gold);position:relative}
+.kicker,.eyebrow{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--teal)}
+.masthead h1{font:600 clamp(42px,7vw,76px)/.98 "Cormorant Garamond",serif;letter-spacing:.035em;margin:14px 0 8px;color:#173b39}
+.subtitle{font:italic 19px "Cormorant Garamond",serif;color:#56716b}
+.rule{display:flex;align-items:center;gap:14px;justify-content:center;margin:22px auto 0;color:var(--gold);letter-spacing:.4em;font-size:12px}.rule:before,.rule:after{content:"";height:1px;width:90px;background:var(--gold)}
+.hero{display:grid;grid-template-columns:1.03fr .97fr;min-height:490px;background:var(--deep);color:#e6eee8}
+.hero-image{min-height:490px;position:relative;overflow:hidden}
+.hero-image img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center 35%;filter:saturate(.78)}
+.hero-image:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,#102322 100%),linear-gradient(0deg,#10232266,transparent 45%)}
+.hero-copy{padding:70px 9% 55px 5%;display:flex;flex-direction:column;justify-content:center}
+.hero-copy .eyebrow{color:#a8c7bc}.hero-copy h2{font:500 48px/1.02 "Cormorant Garamond",serif;margin:18px 0;color:#f1f0e6}
+.hero-copy p{color:#c8d5cf;font-size:12px;line-height:2}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:26px}
+.fact{border-top:1px solid #a58f5d;padding-top:10px}.fact b{display:block;font:600 24px "Cormorant Garamond",serif;color:#d6c69e}.fact span{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:#aabdb5}
+.content{padding:46px 8% 70px}.section{margin:0 0 54px;scroll-margin-top:24px}
+.section-head{display:flex;align-items:baseline;gap:16px;border-bottom:1px solid var(--gold);padding-bottom:9px;margin-bottom:23px}
+.section-no{font:italic 17px "Cormorant Garamond",serif;color:var(--gold)}
+.section h2{font:600 32px "Cormorant Garamond",serif;margin:0;color:#214b47}
+.prose{max-width:850px}.prose p{margin:0 0 15px;text-align:justify}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.note{background:#e2e8df;border-left:3px solid var(--jade);padding:20px 23px;font:italic 17px/1.55 "Cormorant Garamond",serif;color:#345b55}
+.profile-table{width:100%;border-collapse:collapse;margin-top:22px;font-size:12px}.profile-table td{padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}.profile-table td:first-child{width:28%;font:600 16px "Cormorant Garamond",serif;color:var(--teal)}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.gallery figure{margin:0;background:#e2e3d8;padding:9px;border:1px solid #c6c6b3}
+.gallery img{display:block;width:100%;height:320px;object-fit:cover;filter:saturate(.82)}
+.gallery figcaption{padding:10px 5px 3px;text-align:center;font:italic 16px "Cormorant Garamond",serif;color:#52645e}
+.gallery figure:first-child img{object-position:center 30%}
+.headcanons{counter-reset:hc;display:grid;grid-template-columns:1fr 1fr;gap:0 30px}
+.hc{counter-increment:hc;display:grid;grid-template-columns:35px 1fr;gap:10px;padding:15px 0;border-bottom:1px solid var(--line)}
+.hc:before{content:counter(hc,decimal-leading-zero);font:italic 17px "Cormorant Garamond",serif;color:var(--gold)}
+.hc p{margin:0;font-size:12px;line-height:1.8}
+.username{display:inline-block;font:italic 25px "Cormorant Garamond",serif;color:#276d66;border-bottom:1px solid var(--gold);padding-bottom:3px}
+.footer{background:#173331;color:#cbd8d0;padding:30px 8%;display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+.footer strong{font:600 22px "Cormorant Garamond",serif;letter-spacing:.04em;color:#d5c69e;text-transform:none}
+.toc{display:flex;flex-wrap:wrap;gap:9px 18px;justify-content:center;padding:17px 7%;background:#e1e5d9;border-bottom:1px solid var(--line)}
+.toc a{text-decoration:none;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#41615a}.toc a:hover{color:#a1844e}
+@media(max-width:760px){.page{width:100%;margin:0}.page:before{inset:8px}.page:after{inset:13px}.masthead{padding:34px 8% 20px}.hero{grid-template-columns:1fr}.hero-image{min-height:390px}.hero-image:after{background:linear-gradient(0deg,#102322,transparent 45%)}.hero-copy{padding:25px 9% 45px}.hero-copy h2{font-size:42px}.content{padding:36px 8% 55px}.intro-grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.gallery img{height:auto;max-height:460px;object-fit:contain;background:#d5d9cf}.headcanons{grid-template-columns:1fr}.footer{flex-direction:column;text-align:center}}
+@media print{body{background:white}.page{margin:0;width:100%;box-shadow:none}.toc{display:none}.section{break-inside:avoid}.gallery figure{break-inside:avoid}}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead">
+<div class="kicker">Архив Храма Единого Света · Личное дело № 1893</div>
+<h1>Аль-Хайтам</h1>
+<div class="subtitle">Служитель Храма · Сословие Просветлённых</div>
+<div class="rule">✦ ❦ ✦</div>
+</header>
+<nav class="toc">
+<a href="#profile">Сведения</a><a href="#character">Характер</a><a href="#appearance">Внешность</a><a href="#biography">Биография</a><a href="#headcanons">Частные заметки</a><a href="#gallery">Иллюстрации</a>
+</nav>
+<section class="hero">
+<div class="hero-image"><img src="https://i.ibb.co/HfVYxJqc/1de7e31ab33d6111969398bb371f6607.jpg" alt="Аль-Хайтам у витражного окна с книгой"></div>
+<div class="hero-copy">
+<div class="eyebrow">Запись из внутреннего архива · 1893</div>
+<h2>Sapere aude</h2>
+<p>Священник Храма Единого Света. Человек, предпочитающий точность громким речам, книги праздным беседам, а собственное суждение готовым ответам.</p>
+<div class="facts">
+<div class="fact"><b>25</b><span>лет</span></div>
+<div class="fact"><b>Храм</b><span>место службы</span></div>
+<div class="fact"><b>@Alt_ego8</b><span>юзернейм</span></div>
+</div>
+</div>
+</section>
+<div class="content">
+<section class="section" id="profile">
+<div class="section-head"><span class="section-no">I.</span><h2>Личные сведения</h2></div>
+<div class="intro-grid">
+<div class="prose"><p><strong>Имя.</strong> Аль-Хайтам. Имя, которое он носит с рождения. В Храме к нему обращаются преимущественно по имени, хотя в официальных обстоятельствах используют положенные обращения по сану. Сам он не придаёт этому особенного значения и не требует от окружающих особенной формы обращения. О фамилии или происхождении своей семьи рассказывает нечасто, хотя и не пытается скрывать прошлое. Просто не считает детство подходящей темой для каждого разговора.</p>
+<p><strong>Возраст.</strong> Двадцать пять лет. Несмотря на сравнительно молодой возраст, Аль-Хайтам уже успел получить образование, принять духовный сан и освоиться с жизнью при Храме. Он не стремится непременно продвинуться выше или добиться особенного положения среди Просветлённых. Нынешнее занятие его вполне устраивает, пока позволяет самостоятельно распоряжаться временем и не требует отказываться от всего остального ради службы.</p></div>
+<aside class="note">«Он не стремится непременно продвинуться выше. Нынешнее занятие его вполне устраивает, пока оставляет ему право распоряжаться собственной жизнью».</aside>
+</div>
+<table class="profile-table">
+<tr><td>Сюжетная роль</td><td>Человек, священник Храма Единого Света, принадлежащий к сословию Просветлённых.</td></tr>
+<tr><td>Обязанности</td><td>Богослужения, церковные архивы, работа с религиозными текстами, подготовка проповедей, проверка старых рукописей и помощь другим служителям в толковании отдельных положений учения.</td></tr>
+<tr><td>Отношение к вере</td><td>Не принадлежит к числу особенно ревностных проповедников. Исполняет обязанности, знает церковные обряды и соблюдает требования сана, однако не стремится превращать религию в единственную тему для общения. Его личное отношение к Единому Свету остаётся вопросом, который он предпочитает не выносить на всеобщее обсуждение.</td></tr>
+</table>
+</section>
+
+<section class="section" id="character">
+<div class="section-head"><span class="section-no">II.</span><h2>Характер</h2></div>
+<div class="prose">
+<p>В повседневной жизни Аль-Хайтам довольно спокоен и собран. Он редко поддаётся чужой суете, предпочитая сначала разобраться в происходящем и лишь затем принимать решение. При этом его нельзя назвать человеком, который всегда сохраняет невозмутимость. Он способен раздражаться, упрямиться и довольно резко реагировать на то, что считает откровенной глупостью. Правда, долго переживать из за подобных мелочей ему несвойственно.</p>
+<p>В общении он прямолинеен и не всегда задумывается о том, насколько мягко звучат его слова. Иногда его замечания оказываются неприятнее, чем он предполагал, хотя намеренно задевать собеседника он обычно не собирается. Вместе с тем Аль-Хайтам не лишён чувства юмора. Его шутки чаще сухие и немного язвительные, а сам он порой произносит их с таким серьёзным выражением лица, что не каждый сразу понимает, шутит он или нет.</p>
+<p>Он ценит самостоятельность и не любит, когда другие пытаются распоряжаться его временем. Особенно это касается обязанностей, которые появляются без предупреждения и не имеют очевидной необходимости. В работе Аль-Хайтам способен быть весьма внимательным и ответственным, но образцовым служителем его назвать трудно. Он может отложить неприятное поручение, пропустить необязательное собрание или оставить кабинет ради дела, которое считает более важным. При этом качество выполненной работы обычно оказывается вполне удовлетворительным.</p>
+<p>К чужим привычкам и убеждениям он относится без особенного желания их исправлять. Аль-Хайтам не считает, что все люди должны жить одинаково или стремиться к одним целям. Он скорее предпочитает предоставить окружающим возможность самостоятельно распоряжаться собственной жизнью. Однако это не означает, что он готов мириться с жестокостью или несправедливостью. В подобных вопросах его терпимость заканчивается довольно быстро.</p>
+<p>С чужими переживаниями ему бывает непросто. Он не всегда понимает, какие слова ожидают от него услышать, и не особенно искусен в утешениях. Зато, если видит возможность помочь делом, обычно не отказывается. Особенно терпелив он с детьми, к которым относится с заметной мягкостью. Их любопытство и непосредственность ему нравятся, а попытки взрослых подавлять детскую самостоятельность вызывают у него неодобрение.</p>
+<p>При всей своей склонности к уединению Аль-Хайтам не избегает людей намеренно. Он способен поддержать разговор, если ему есть что сказать, и вполне спокойно чувствует себя в обществе знакомых. Просто не испытывает необходимости постоянно поддерживать отношения или искать компанию на каждый свободный вечер. В Храме у него сложились ровные отношения с коллегами, однако за пределами службы он редко проводит с ними время.</p>
+</div>
+</section>
+
+<section class="section" id="appearance">
+<div class="section-head"><span class="section-no">III.</span><h2>Внешность</h2></div>
+<div class="intro-grid">
+<div class="prose"><p>Аль-Хайтам обладает светлыми волосами с холодным пепельным оттенком и выразительными бирюзовыми глазами. Черты лица достаточно строгие, но не лишены мягкости. Телосложение крепкое и подтянутое, в нём заметна хорошая физическая подготовка. Он не выглядит человеком, привыкшим проводить всё свободное время исключительно за письменным столом.</p>
+<p>В одежде предпочитает практичность. Для службы носит положенное облачение духовенства, не добавляя к нему лишних украшений. Вне Храма выбирает хорошо сидящие рубашки, жилеты, брюки и длинные пальто, подходящие для английской погоды. Его вещи обычно находятся в порядке, хотя особенного внимания моде он не уделяет. При необходимости Аль-Хайтам может выглядеть вполне представительно, но специально производить впечатление на окружающих не старается.</p></div>
+<img src="https://i.ibb.co/9kx8MLP6/440af1447b216c5b028a5b7e962523b3.jpg" alt="Аль-Хайтам с раскрытой книгой" style="width:100%;max-height:360px;object-fit:cover;border:8px solid #e0e2d7;outline:1px solid #b7a77a">
+</div>
+</section>
+
+<section class="section" id="biography">
+<div class="section-head"><span class="section-no">IV.</span><h2>Биография</h2></div>
+<div class="prose">
+<p>О собственных родителях Аль-Хайтам практически ничего не помнит. Они умерли, когда он был ещё совсем маленьким, и большую часть его ранних воспоминаний составляет жизнь с бабушкой, взявшей на себя заботу о нём. Семья происходила из образованной среды, а многие её представители были связаны с научной деятельностью. В доме сохранилось немало книг, старых записей и рукописей, которые постепенно стали привычной частью жизни мальчика.</p>
+<p>Бабушка была человеком любознательным и образованным. Она интересовалась наукой, литературой и различными областями знания, охотно делилась прочитанным и никогда не ограничивала любопытство внука. Именно она привила ему любовь к книгам и научила не бояться вопросов, на которые не всегда находились простые ответы. В их доме чтение было обычной частью повседневности, а не занятием, за которое ребёнка следовало отдельно хвалить.</p>
+<p>Среди старых томов сохранились записи родителей. Отец оставлял заметки на полях, иногда дополняя их небольшими комментариями, а мать писала пожелания на титульных листах. Бабушка тоже оставила после себя немало вещей, но сильнее всего Аль-Хайтам запомнил одно её пожелание. Она хотела, чтобы её дитя прожило мирную жизнь. С годами эти слова стали для него своеобразным ориентиром, хотя он никогда не воспринимал их как обязательство, которое необходимо кому то доказывать.</p>
+<p>Когда Аль-Хайтаму исполнилось семь лет, бабушка умерла. После её смерти он остался без близких родственников. Организацией похорон и последующими формальностями пришлось заниматься практически самостоятельно, насколько это было возможно для ребёнка такого возраста. Впоследствии опеку над ним принял Храм Единого Света, предоставив ему жильё и возможность продолжить образование.</p>
+<p>Жизнь при Храме поначалу сильно отличалась от привычного домашнего уклада. Здесь существовали строгий распорядок, определённые обязанности и множество правил, к которым требовалось привыкнуть. Аль-Хайтам не всегда справлялся с последним, однако учился хорошо и довольно быстро освоился с новой обстановкой. Он не был самым прилежным воспитанником во всём, что касалось дисциплины, зато занятия давались ему достаточно легко.</p>
+<p>Постепенно его интересы привели его к изучению богословия, философии и истории религии. Он продолжал читать, посещал занятия и со временем получил доступ к материалам, которые прежде были ему недоступны. Впоследствии Аль-Хайтам принял духовный сан. Насколько этот выбор был продиктован личными убеждениями, а насколько обстоятельствами его жизни, он предпочитает не обсуждать. Так или иначе, церковная служба стала его нынешним занятием, а Храм местом, в котором прошла значительная часть его взросления.</p>
+<p>За годы службы Аль-Хайтам успел познакомиться с внутренним устройством Храма, его историей и особенностями духовной иерархии. Ему поручали работу с церковными документами, подготовку отдельных текстов и изучение старых рукописей. Со временем он получил возможность самостоятельно заниматься некоторыми архивными материалами. Подобная деятельность оказалась ему по душе, поскольку позволяла работать с тем, что действительно представляло для него интерес.</p>
+<p>Разумеется, жизнь среди духовенства не всегда обходилась без разногласий. Его отношение к церковному распорядку порой становилось причиной замечаний со стороны старших служителей. Аль-Хайтам не отличался особенным рвением к посещению собраний и не всегда торопился выполнять дополнительные поручения. Однако серьёзных последствий удавалось избегать. Свои непосредственные обязанности он исполнял, а качество его работы обычно говорило само за себя.</p>
+<p>В настоящее время Аль-Хайтам продолжает служить в Храме Единого Света. У него есть собственное помещение, доступ к библиотеке и достаточно свободного времени, чтобы заниматься личными делами. Иногда ему поручают дополнительные задачи, связанные с церковными документами или подготовкой богослужений. Он поддерживает рабочие отношения с коллегами, хотя близких друзей среди служителей у него нет.</p>
+<p>Книги и некоторые личные вещи бабушки по прежнему находятся при нём. Он хранит старые тома с пометками родителей и не спешит расставаться с ними, даже если отдельные страницы уже заметно обветшали. Иногда, разбирая знакомые переплёты, он натыкается на записи, сделанные много лет назад. Такие находки напоминают ему о детстве, но не мешают жить настоящим.</p>
+<p>Сейчас его жизнь складывается достаточно размеренно. У него есть служба, привычное место в городе и возможность самостоятельно распоряжаться большей частью своего времени. Он не строит грандиозных планов на будущее и не стремится непременно занять положение выше нынешнего. Пожалуй, пожелание бабушки о мирной жизни по прежнему остаётся для него самым понятным представлением о счастливом будущем.</p>
+</div>
+</section>
+
+<section class="section" id="headcanons">
+<div class="section-head"><span class="section-no">V.</span><h2>Частные заметки</h2></div>
+<div class="headcanons">
+<div class="hc"><p>Аль-Хайтам обладает довольно хорошей памятью на голоса. Он способен узнать человека по нескольким произнесённым фразам, даже если не видел его несколько лет. При этом имена и лица малознакомых людей запоминает значительно хуже.</p></div>
+<div class="hc"><p>У него есть привычка оставлять небольшие записки в самых неожиданных местах. Обычно это короткие напоминания, случайные наблюдения или фразы, которые он услышал и счёл любопытными. Иногда спустя месяцы он сам обнаруживает их среди бумаг и уже не помнит, при каких обстоятельствах сделал запись.</p></div>
+<div class="hc"><p>Он умеет играть на фортепиано. Первые занятия проходили ещё в детстве, по настоянию бабушки. Сейчас он садится за инструмент преимущественно по вечерам, когда в доме становится тихо. Предпочитает произведения с несложной мелодией и редко играет для посторонних.</p></div>
+<div class="hc"><p>Аль-Хайтам довольно требователен к качеству письменных принадлежностей. Предпочитает определённую толщину пера, хорошо приготовленные чернила и плотную бумагу. Если ему приходится работать с неудобными материалами, настроение портится заметно быстрее обычного.</p></div>
+<div class="hc"><p>Он плохо переносит крепкий табачный дым. Запах быстро начинает его раздражать, особенно в закрытых помещениях. По этой причине посещение некоторых заведений Восторга он старается ограничивать.</p></div>
+<div class="hc"><p>У него есть небольшая коллекция старых монет. Большинство экземпляров досталось ему случайно, некоторые он приобрёл у торговцев. Аль-Хайтам интересуется историей их происхождения и иногда пытается выяснить, кому они принадлежали прежде.</p></div>
+<div class="hc"><p>Он довольно хорошо ориентируется в городе и обладает привычкой запоминать расположение улиц, переулков и небольших заведений. Может без труда найти нужное место спустя долгое время после первого посещения. Иногда использует незнакомые маршруты просто из любопытства.</p></div>
+<div class="hc"><p>Аль-Хайтам не любит фотографические ателье. Считает процедуру слишком долгой, а необходимость сохранять неподвижность на протяжении нескольких минут быстро утомляет его. Если снимок всё же приходится делать, выражение лица у него обычно получается совершенно серьёзным.</p></div>
+<div class="hc"><p>Он предпочитает чай кофе и редко пьёт последний. Любит крепкий чёрный чай, обычно без сахара. К качеству заварки относится довольно внимательно и способен безошибочно заметить, если привычный сорт заменили другим.</p></div>
+<div class="hc"><p>Аль-Хайтам несколько раз в неделю занимается фехтованием. Первоначально он начал посещать занятия ещё в юности, когда при Храме проводились уроки физической подготовки. Со временем тренировки вошли в привычку. Он предпочитает рапиру, уделяя внимание точности движений и технике. Благодаря регулярным занятиям у него хорошая осанка, развитая мускулатура и выносливость.</p></div>
+</div>
+</section>
+
+<section class="section" id="gallery">
+<div class="section-head"><span class="section-no">VI.</span><h2>Иллюстрации</h2></div>
+<div class="gallery">
+<figure><a href="https://ibb.co.com/KpX7L1Wt" target="_blank" rel="noopener noreferrer"><img src="https://i.ibb.co/HfVYxJqc/1de7e31ab33d6111969398bb371f6607.jpg" alt="Аль-Хайтам у витража"></a><figcaption>Автор: 八日超白 в Twitter</figcaption></figure>
+<figure><a href="https://ibb.co.com/39xrJqK2" target="_blank" rel="noopener noreferrer"><img src="https://i.ibb.co/9kx8MLP6/440af1447b216c5b028a5b7e962523b3.jpg" alt="Аль-Хайтам с книгой"></a><figcaption>Автор: @MiotaWorks в Twitter</figcaption></figure>
+<figure><a href="https://ibb.co.com/S7dD0Qsw" target="_blank" rel="noopener noreferrer"><img src="https://i.ibb.co/mFXrtvD5/0e0426aa699f3eaab8b58cbcb9943257.jpg" alt="Аль-Хайтам в городском костюме"></a><figcaption>Автор: @cheong1110 в Twitter</figcaption></figure>
+<figure><a href="https://ibb.co.com/RFTzCWv" target="_blank" rel="noopener noreferrer"><img src="https://i.ibb.co/cBhDNdg/643dd02374c16efc0924fbb4062f18d6.jpg" alt="Аль-Хайтам в тёмном пальто с зелёным шарфом"></a><figcaption>Автор: @ookami_ciro в Twitter</figcaption></figure>
+<figure><a href="https://ibb.co.com/1twHgqWW" target="_blank" rel="noopener noreferrer"><img src="https://i.ibb.co/JwMX17JJ/054ac922861c783985c94eaa309a0600.jpg" alt="Официальный образ Аль-Хайтама"></a><figcaption>Официальный арт от разработчиков</figcaption></figure>
+</div>
+</section>
+<div class="section" style="text-align:center;margin-bottom:0">
+<div class="eyebrow">Учетная запись</div><p class="username"><a href="https://t.me/Alt_ego8" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;">@Alt_ego8</a></p>
+</div>
+</div>
+<footer class="footer"><strong>Храм Единого Света</strong><span>Архивная запись · 1893 · Для внутреннего пользования</span></footer>
+</main>
+</body>
+</html>
